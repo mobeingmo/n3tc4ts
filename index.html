@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N3TC4T5 About</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    :root {
+        --bg1: #000000;
+        --bg2: #14001f;
+        --bg3: #2a003f;
+        --card: rgba(20, 0, 40, 0.75);
+        --accent: #a855f7;
+        --text: #e5e5e5;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Consolas, monospace;
+    }
+
+    body {
+        background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+        background-attachment: fixed;
+        color: var(--text);
+        scroll-behavior: smooth;
+    }
+
+    header {
+        padding: 2rem;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid var(--accent);
+    }
+
+    header h1 {
+        color: var(--accent);
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 4rem 2rem;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        color: var(--accent);
+        border-left: 3px solid var(--accent);
+        padding-left: 15px;
+    }
+
+    .card {
+        background: var(--card);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        backdrop-filter: blur(6px);
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .members {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .member {
+        background: var(--card);
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+    }
+
+    .social-line {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        text-align: center;
+        border-top: 1px solid rgba(168, 85, 247, 0.3);
+        padding-top: 1rem;
+    }
+
+    .social-line a {
+        color: var(--accent);
+        text-decoration: none;
+        margin: 0 10px;
+        transition: opacity 0.2s ease;
+    }
+
+    .social-line a:hover {
+        opacity: 0.7;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #888;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>N3TC4T5</h1>
+    <p>The cybersecurity team</p>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>
+            N3TC4T5 is a competitive cybersecurity team formed
+            in the American Digital School 
+            focused on offensive security,
+            cryptography, reverse engineering, web exploitation, and binary analysis.
+        </p>
+    </div>
+</section>
+
+<section id="description">
+    <h2>Description</h2>
+    <div class="card">
+        <p>
+            We are a team formed in the American
+            Digital School with the goal of 
+            winning and participating in 
+            a lot of CTFs and Hackathons.
+        </p>
+    </div>
+</section>
+
+<section id="members">
+    <h2>Team Members</h2>
+    <div class="members" id="memberList">
+    </div>
+</section>
+
+<section id="socials">
+    <div class="social-container">
+        <div class="social-text">Join Our Socials!!</div>
+
+        <div class="social-line">
+            <a href="https://discord.gg/qZKVUBfxRN" target="_blank"><img src="images/Discord.png" alt="Discord" class="social-icon"></a>
+            <a href="https://ctftime.org/team/425193" target="_blank"><img src="images/CTFtime.png" alt="CTFtime" class="social-icon"></a>
+            </div>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 N3TC4T5 All rights reserved
+</footer>
+
+<script>
+    const members = [
+        { name: "mo", role: "Crypto / Forensics / MISC / PWN / OSINT" },
+        { name: "Member2", role: "Role / Role" },
+        { name: "Member3", role: "Role / Role" },
+        { name: "Member4", role: "Role / Role" }
+    ];
+
+    const container = document.getElementById("memberList");
+
+    members.forEach(member => {
+        const div = document.createElement("div");
+        div.className = "member";
+        div.innerHTML = `
+            <h3>${member.name}</h3>
+            <p>${member.role}</p>
+        `;
+        container.appendChild(div);
+    });
+
+    console.log("N3TC4T5 site live.");
+</script>
+
+</body>
+</html>
