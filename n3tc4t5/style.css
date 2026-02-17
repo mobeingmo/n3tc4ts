@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@font-face {
+    font-family: 'Jersey 10';
+    src: url('fonts/Jersey10.woff2') format('woff2'),
+         url('fonts/Jersey10.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --black: #000000;
+    --purple-dark: #14001f;
+    --purple-deep: #2a003f;
+    --accent: #b26bff;
+    --text: #eae6f5;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, var(--black), var(--purple-dark), var(--purple-deep));
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: "Jersey 10", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+}
+
+header h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: var(--accent);
+}
+
+header p {
+    font-family: "Jersey 10", sans-serif;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-family: "Jersey 10", sans-serif;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.card {
+    font-family: "Jersey 10", sans-serif;
+    background: rgba(20, 0, 40, 0.75);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(178, 107, 255, 0.25);
+    backdrop-filter: blur(6px);
+    transition: transform 0.8s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.members {
+    font-family: "Jersey 10", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.member {
+    font-family: "Jersey 10", sans-serif;
+    background: rgba(20, 0, 40, 0.75);
+    backdrop-filter: blur(6px);
+    transition: box-shadow 0.4s ease;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(178, 107, 255, 0.25);
+}
+.members:hover {
+    backdrop-filter: blur(6px);
+    transition: transform 0.4s ease;
+}
+.member:hover {
+    background: rgba(40, 0, 80, 0.85);
+    border-color: rgba(178, 107, 255, 0.6);
+    backdrop-filter: blur(6px);
+    transition: transform 0.4s ease;
+}
+#socials {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.social-text {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    color: var(--accent);
+    transition: opacity 1s ease;
+}
+
+.social-line {
+    border-top: 1px solid var(--accent);
+    padding-top: 12px;
+}
+
+.social-line a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.8s ease;
+}
+
+.social-line a:hover {
+    opacity: 0.7;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
