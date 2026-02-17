@@ -78,7 +78,7 @@ h2 {
     border-radius: 12px;
     border: 1px solid rgba(178, 107, 255, 0.25);
     backdrop-filter: blur(6px);
-    transition: transform 0.8s ease;
+    transition: transform 0.1s ease;
 }
 
 .card:hover {
@@ -135,7 +135,7 @@ h2 {
     color: var(--accent);
     text-decoration: none;
     margin: 0 10px;
-    transition: opacity 0.8s ease;
+    transition: opacity 1s ease;
 }
 
 .social-line a:hover {
@@ -148,3 +148,4 @@ footer {
     font-size: 0.85rem;
     opacity: 0.9;
 }
+
